@@ -59,63 +59,70 @@ namespace AdventureGame
             // 
             // option1Button
             // 
+            this.option1Button.BackColor = System.Drawing.Color.Red;
+            this.option1Button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.option1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.option1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option1Button.Location = new System.Drawing.Point(40, 316);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(75, 23);
             this.option1Button.TabIndex = 2;
-            this.option1Button.UseVisualStyleBackColor = true;
+            this.option1Button.UseVisualStyleBackColor = false;
             this.option1Button.Click += new System.EventHandler(this.option1Button_Click);
             // 
             // option2Button
             // 
-            this.option2Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("option2Button.BackgroundImage")));
+            this.option2Button.BackColor = System.Drawing.Color.Red;
+            this.option2Button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.option2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.option2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option2Button.Location = new System.Drawing.Point(40, 369);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(75, 23);
             this.option2Button.TabIndex = 3;
-            this.option2Button.UseVisualStyleBackColor = true;
+            this.option2Button.UseVisualStyleBackColor = false;
             this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
             // option3Button
             // 
-            this.option3Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("option3Button.BackgroundImage")));
+            this.option3Button.BackColor = System.Drawing.Color.Red;
+            this.option3Button.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.option3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.option3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option3Button.Location = new System.Drawing.Point(40, 418);
             this.option3Button.Name = "option3Button";
             this.option3Button.Size = new System.Drawing.Size(75, 23);
             this.option3Button.TabIndex = 4;
-            this.option3Button.UseVisualStyleBackColor = true;
+            this.option3Button.UseVisualStyleBackColor = false;
             this.option3Button.Visible = false;
             this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
             // 
             // button1Label
             // 
+            this.button1Label.ForeColor = System.Drawing.Color.White;
             this.button1Label.Location = new System.Drawing.Point(134, 316);
             this.button1Label.Name = "button1Label";
             this.button1Label.Size = new System.Drawing.Size(503, 23);
             this.button1Label.TabIndex = 5;
-            this.button1Label.Text = "label1";
             // 
             // button2Label
             // 
+            this.button2Label.ForeColor = System.Drawing.Color.White;
             this.button2Label.Location = new System.Drawing.Point(134, 369);
             this.button2Label.Name = "button2Label";
             this.button2Label.Size = new System.Drawing.Size(503, 23);
             this.button2Label.TabIndex = 6;
-            this.button2Label.Text = "label1";
             // 
             // button3Label
             // 
+            this.button3Label.ForeColor = System.Drawing.Color.White;
             this.button3Label.Location = new System.Drawing.Point(134, 418);
             this.button3Label.Name = "button3Label";
             this.button3Label.Size = new System.Drawing.Size(503, 23);
             this.button3Label.TabIndex = 7;
-            this.button3Label.Text = "label1";
             // 
             // Form1
             // 
