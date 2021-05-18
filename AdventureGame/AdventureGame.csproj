@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68121__gijsknol__horn1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interrogation-opening1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interrogation-opening.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jail-ending.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jail cell closing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laughter.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escapes-ending.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\throwing-chair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair throw.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goodcop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muffled talk.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit table.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banging hand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walking.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Police Interrogation.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pressure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intOpening.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

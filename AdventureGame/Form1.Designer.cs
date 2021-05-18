@@ -31,31 +31,24 @@ namespace AdventureGame
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.outputLabel = new System.Windows.Forms.Label();
-            this.imageLabel = new System.Windows.Forms.Label();
             this.option1Button = new System.Windows.Forms.Button();
             this.option2Button = new System.Windows.Forms.Button();
             this.option3Button = new System.Windows.Forms.Button();
             this.button1Label = new System.Windows.Forms.Label();
             this.button2Label = new System.Windows.Forms.Label();
             this.button3Label = new System.Windows.Forms.Label();
+            this.imageLabel = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imageLabel)).BeginInit();
             this.SuspendLayout();
             // 
             // outputLabel
             // 
-            this.outputLabel.Font = new System.Drawing.Font("Garamond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.Color.White;
             this.outputLabel.Location = new System.Drawing.Point(40, 36);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(597, 90);
+            this.outputLabel.Size = new System.Drawing.Size(597, 71);
             this.outputLabel.TabIndex = 0;
-            // 
-            // imageLabel
-            // 
-            this.imageLabel.Location = new System.Drawing.Point(37, 126);
-            this.imageLabel.Name = "imageLabel";
-            this.imageLabel.Size = new System.Drawing.Size(600, 155);
-            this.imageLabel.TabIndex = 1;
-            this.imageLabel.Text = "label1";
             // 
             // option1Button
             // 
@@ -124,23 +117,33 @@ namespace AdventureGame
             this.button3Label.Size = new System.Drawing.Size(503, 23);
             this.button3Label.TabIndex = 7;
             // 
+            // imageLabel
+            // 
+            this.imageLabel.Location = new System.Drawing.Point(40, 110);
+            this.imageLabel.Name = "imageLabel";
+            this.imageLabel.Size = new System.Drawing.Size(597, 189);
+            this.imageLabel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageLabel.TabIndex = 8;
+            this.imageLabel.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(666, 459);
+            this.Controls.Add(this.imageLabel);
             this.Controls.Add(this.button3Label);
             this.Controls.Add(this.button2Label);
             this.Controls.Add(this.button1Label);
             this.Controls.Add(this.option3Button);
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
-            this.Controls.Add(this.imageLabel);
             this.Controls.Add(this.outputLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Choose Your Own Adventure Game";
+            ((System.ComponentModel.ISupportInitialize)(this.imageLabel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,13 +151,13 @@ namespace AdventureGame
         #endregion
 
         private System.Windows.Forms.Label outputLabel;
-        private System.Windows.Forms.Label imageLabel;
         private System.Windows.Forms.Button option1Button;
         private System.Windows.Forms.Button option2Button;
         private System.Windows.Forms.Button option3Button;
         private System.Windows.Forms.Label button1Label;
         private System.Windows.Forms.Label button2Label;
         private System.Windows.Forms.Label button3Label;
+        private System.Windows.Forms.PictureBox imageLabel;
     }
 }
 

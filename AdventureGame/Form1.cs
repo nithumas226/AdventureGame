@@ -26,7 +26,7 @@ namespace AdventureGame
         public Form1()
         {
             InitializeComponent();
-            //creates and generates random number
+            //create random generator
             int pageNumber;
             pageNumber = RandGen.Next(1, 5);
 
@@ -124,13 +124,18 @@ namespace AdventureGame
 
         public void DisplayPage()
         {
-            //Displaying appropriate messages depending on what button is pressed
+            //Displaying appropriate messages, sounds and images depending on what button is pressed
             switch (page)
             {
                 case 1:
                     outputLabel.Text = "You have a criminal in holding and have to decide how to break him.";
                     button1Label.Text = "Good Cop";
                     button2Label.Text = "Bad Cop";
+
+                    imageLabel.Image = (Properties.Resources.intOpening);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.soundOpening);
+                    musicPlayer.Play();
 
                     break;
                 case 2:
@@ -140,11 +145,21 @@ namespace AdventureGame
                     button2Label.Text = "Motives";
                     button3Label.Text = "No Choice";
 
+                    imageLabel.Image = (Properties.Resources.goodCop);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.muffledTalking);
+                    musicPlayer.Play();
+
                     break;
                 case 3:
                     outputLabel.Text = "You go in screaming and bang your hand on the table. He isn't intimated.";
                     button1Label.Text = "Throw chair";
                     button2Label.Text = "Calm Down";
+
+                    imageLabel.Image = (Properties.Resources.bangingHand);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.hitTable);
+                    musicPlayer.Play();
 
                     break;
                 case 4:
@@ -154,6 +169,11 @@ namespace AdventureGame
                     button1Label.Text = "Why was he there";
                     button2Label.Text = "Previous Charges";
 
+                    imageLabel.Image = (Properties.Resources.policeInterrogation);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.walkingMuffled);
+                    musicPlayer.Play();
+
                     break;
                 case 5:
                     option3Button.Visible = false;
@@ -161,6 +181,11 @@ namespace AdventureGame
                     outputLabel.Text = "He says that's enough and doesn't  want to talk anymore. Play Again?";
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
+
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
 
                     break;
                 case 6:
@@ -170,11 +195,21 @@ namespace AdventureGame
                     button1Label.Text = "Why he was picked up";
                     button2Label.Text = "Keep Digging";
 
+                    imageLabel.Image = (Properties.Resources.policeInterrogation);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.walkingMuffled);
+                    musicPlayer.Play();
+
                     break;
                 case 7:
                     outputLabel.Text = "You throw the chair and he is rattled. Ask him to confess or keep up the act?";
                     button1Label.Text = "Confess";
                     button2Label.Text = "Keep up the act";
+
+                    imageLabel.Image = (Properties.Resources.chairThrowing);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.chairThrow);
+                    musicPlayer.Play();
 
                     break;
                 case 8:
@@ -182,11 +217,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
+
                     break;
                 case 9:
                     outputLabel.Text = "He says it was to visit someone else";
                     button1Label.Text = "Bluff";
                     button2Label.Text = "Truth";
+
+                    imageLabel.Image = (Properties.Resources.policeInterrogation);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.walkingMuffled);
+                    musicPlayer.Play();
 
                     break;
                 case 10:
@@ -194,11 +239,21 @@ namespace AdventureGame
                     button1Label.Text = "Pressure";
                     button2Label.Text = "Believe him";
 
+                    imageLabel.Image = (Properties.Resources.policeInterrogation);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.walkingMuffled);
+                    musicPlayer.Play();
+
                     break;
                 case 11:
                     outputLabel.Text = "Tell him about how he was reported by a 911 call near the scene. He confesses. Play Again?";
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
+
+                    imageLabel.Image = (Properties.Resources.jailEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.jailCellClosing);
+                    musicPlayer.Play();
 
                     break;
                 case 12:
@@ -206,11 +261,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
+
                     break;
                 case 13:
                     outputLabel.Text = "He is scared and confesses. Play Again?";
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
+
+                    imageLabel.Image = (Properties.Resources.jailEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.jailCellClosing);
+                    musicPlayer.Play();
 
                     break;
                 case 14:
@@ -218,11 +283,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
+
                     break;
                 case 15:
                     outputLabel.Text = "Tell him about the evidence collected.";
                     button1Label.Text = "Eye Witnesses";
                     button2Label.Text = "Motives";
+
+                    imageLabel.Image = (Properties.Resources.policeInterrogation);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.walkingMuffled);
+                    musicPlayer.Play();
 
                     break;
                 case 16:
@@ -230,11 +305,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.jailEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.jailCellClosing);
+                    musicPlayer.Play();
+
                     break;
                 case 17:
                     outputLabel.Text = "You ask who it was and he says it is his girl.";
                     button1Label.Text = "Bluff";
                     button2Label.Text = "Truth";
+
+                    imageLabel.Image = (Properties.Resources.policeInterrogation);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.walkingMuffled);
+                    musicPlayer.Play();
 
                     break;
                 case 18:
@@ -242,11 +327,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.jailEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.jailCellClosing);
+                    musicPlayer.Play();
+
                     break;
                 case 19:
                     outputLabel.Text = "You never get him to confess. Play Again?";
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
+
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
 
                     break;
                 case 20:
@@ -254,11 +349,21 @@ namespace AdventureGame
                     button1Label.Text = "Jail Time";
                     button2Label.Text = "Yell";
 
+                    imageLabel.Image = (Properties.Resources.pressure);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.walkingMuffled);
+                    musicPlayer.Play();
+
                     break;
                 case 21:
                     outputLabel.Text = "He doesn't say anything";
                     button1Label.Text = "Pressure him";
                     button2Label.Text = "Let him think";
+
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
 
                     break;
                 case 22:
@@ -266,11 +371,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.jailEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.jailCellClosing);
+                    musicPlayer.Play();
+
                     break;
                 case 23:
                     outputLabel.Text = "You never get him to confess. Play Again?";
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
+
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
 
                     break;
                 case 24:
@@ -278,11 +393,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
+
                     break;
                 case 25:
                     outputLabel.Text = "He confesses. Play Again?";
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
+
+                    imageLabel.Image = (Properties.Resources.jailEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.jailCellClosing);
+                    musicPlayer.Play();
 
                     break;
                 case 26:
@@ -290,11 +415,21 @@ namespace AdventureGame
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
 
+                    imageLabel.Image = (Properties.Resources.escapesEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.laughterEnding);
+                    musicPlayer.Play();
+
                     break;
                 case 27:
                     outputLabel.Text = "He confesses. Play Again?";
                     button1Label.Text = "Yes";
                     button2Label.Text = "No";
+
+                    imageLabel.Image = (Properties.Resources.jailEnding);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.jailCellClosing);
+                    musicPlayer.Play();
 
                     break;
                 case 99:
