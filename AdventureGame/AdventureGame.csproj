@@ -131,5 +131,11 @@
   <ItemGroup>
     <None Include="Resources\intOpening.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detective.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\368779__gurie__short-beep-countdown.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

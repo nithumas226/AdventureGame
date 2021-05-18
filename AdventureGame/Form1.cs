@@ -435,13 +435,18 @@ namespace AdventureGame
                 case 99:
                     option1Button.Visible = false;
                     option2Button.Visible = false;
+
+                    imageLabel.Image = (Properties.Resources.detective);
+
+                    musicPlayer = new SoundPlayer(Properties.Resources.countdown);
+                    musicPlayer.Play();
                     
                     outputLabel.Text = "Thanks for playing";
                     button1Label.Text = "";
                     button2Label.Text = "";
 
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(3500);
                     Application.Exit();
 
                     break;
